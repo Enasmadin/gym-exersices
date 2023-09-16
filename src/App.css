@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+.hero-banner-img {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  width: 700px;
+  height: 900px;
+  margin-top: -330px;
+  z-index: 9999;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media(min-width:280px) and (max-width:582px){
+  .hero-banner-img {
+    display: none;
+  }  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(min-width:581px) and (max-width:679px){
+  .hero-banner-img {
+    /* width: 150px;
+    height: 500px;
+    margin-top: -250px; */
+    display: none;
+  }  
+}
+@media(min-width:680px) and (max-width:797px){
+  .hero-banner-img {
+    /* width: 200px;
+    height: 500px;
+    margin-top: -250px; */
+    display: none;
+  }  
+}
+@media(min-width:798px) and (max-width:899px){
+  .hero-banner-img {
+    width: 300px;
+    height: 700px;
+  } 
+}
+@media(min-width:900px) and (max-width:997px){
+  .hero-banner-img {
+    width: 400px;
+    height: 700px;
+  } 
+}
+@media(min-width:998px) and ( max-width:1200px){
+  .hero-banner-img {
+    width: 500px;
+    height: 700px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media(max-width:340px){
+  .search-btn{
+    /* width: 100% !important;  */
+    margin: 10px 0px !important;
+  }
+}
+
+.MuiStack-root.css-1l4hgl0-MuiStack-root {
+  width: 100%;
+}
+@media(min-width:280px) and (max-width:340px){
+  .search-btn{
+   width: 71% !important;
+  }
+}
+
+@media(min-width:340px) and (max-width:539px){
+  .search-btn{
+    padding: 16px 0px !important;
+  }
+}
+
+@media(min-width:540px) and (max-width:1200px){
+  .search-btn{
+    padding: 16px 64px !important;
+  }
+}
+
+@media (max-width:340px){
+  .css-pmmqvy-MuiFormControl-root-MuiTextField-root {
+      width: 80% !important; 
+  }
+ }
+
+@media (min-width:341px)  and (max-width:490px){
+.css-pmmqvy-MuiFormControl-root-MuiTextField-root {
+    width: 202px !important; 
+}
+}
+
+.MuiBox-root.css-1796qej {
+  width: 100%;
+overflow: hidden; 
+}
+
+ @media(max-width:340px){
+  .MuiBox-root.css-l0l0qq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.search-btn ,.explor-button{
+ background-color: #FF2625 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media(max-width:776px){
+  .react-horizontal-scrolling-menu--arrow-right , .react-horizontal-scrolling-menu--arrow-left {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    right: 20px;
+    bottom: -26px;
+  }
+  .react-horizontal-scrolling-menu--arrow-left{
+    right: 60px;
+  }
+  .react-horizontal-scrolling-menu--arrow-right{
+  right: 20px;
+  }
+}
+.left-arrow ,.right-arrow{
+  cursor: pointer;
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+}
+.exercise-card{
+  width: 400px;
+  background: #fff;
+  border-top: 4px solid #FF2625;
+  border-bottom-left-radius: 20px;
+  text-decoration: none;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  padding-bottom: 10px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+@media(max-width:382px){
+  .exercise-card{
+    width: 200px;
+  }
+}
+@media(max-width:398px){
+  .showing-title{
+    font-size: 20px !important; 
+  } 
+}
+.bodyPart-card {
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card:hover,
+.bodyPart-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.css-wjh20t-MuiPagination-ul{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
